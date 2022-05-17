@@ -11,10 +11,10 @@
 7. Functional Interface - using : Anonymous class, Lambda expression  
 8. Exception - Customizable
 9. Inner class - 
-                 1. Anonymous Inner class
-                 2. Anonymous Inner Class using Lambda
-                 3. Member Inner Class
-                 4. Nested Inner Class
+                 * Anonymous Inner class
+                 * Anonymous Inner Class using Lambda
+                 * Member Inner Class
+                 * Nested Inner Class
 10. Enum 
 11. Annotations
 12. Stream API - map, filter, forEach, Method Reference

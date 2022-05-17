@@ -65,18 +65,15 @@ public class StreamApi_Map {
 		
 //======Using Lambda Empression ::========
 		
-		System.out.println(listValues.stream().map(i -> i*2).reduce(0,(c,e) -> c+e));				// Easiest & Simplest way 
+		System.out.println(listValues.stream()
+									 .map(i -> i*2)
+									 .reduce(0,(c,e) -> c+e) );				// Easiest & Simplest way 
 
 		System.out.println(listValues.stream().map(i -> i*2).reduce(0,(c,e) -> Integer.sum(c, e)));
 
 		// When using Lambda expression, Whenever you are working with a method of a class (which accepts parameter and process it and then return it), there you can use METHOD REFERENCE - as below :
 		
 		System.out.println(listValues.stream().map(i -> i*2).reduce(0, Integer::sum));
-		
-		
-		
-		
-		
 		
 		
 		

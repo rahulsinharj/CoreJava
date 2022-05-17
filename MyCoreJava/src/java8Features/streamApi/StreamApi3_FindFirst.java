@@ -12,7 +12,7 @@ public class StreamApi3_FindFirst {
 		System.out.println(listValues.stream()
 				 .filter(i ->  i%5 == 0)		// Pass only those listValues which are divisible by 5	=> 20 35 55 75
 				 .map(i -> i*2)					// Multiply the resultant listValues by 2	=> 40 70 110 150
-				 .findFirst());					// Answer = 40
+				 .findFirst().orElse(0));			// Answer = 40 ;  if no ans then ans will be =0
 
 		
 	}

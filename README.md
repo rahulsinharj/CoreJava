@@ -2,12 +2,12 @@
 
 **Here I have tried to cover below concepts ::**
 
-1. Funndamental Core Concepts of Java 8
+1. Fundamental Core Concepts of Java 8
 2. Multithreading : 
     - Thread 
     - Runnable
     - join
-    - Deemon Thread
+    - Daemon Thread
     - Interrupted
     - Synchronization
     - Inter Thread 
@@ -26,7 +26,7 @@
     - Member Inner Class
     - Nested Inner Class
 
-11. Enum 
+11. Enum class
 12. Annotations
 13. Stream API : 
     - map

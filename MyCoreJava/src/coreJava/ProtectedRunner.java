@@ -18,7 +18,7 @@ public class ProtectedRunner extends ProtectedA {
 	}
 
 	@Override
-	public void m1() {			// This override is not at all required , but to extend "ProtectedA" inside "ProtectedRunner" is a must here to access m1() of ProtectedA   
+	public void m1() {			// This override is not at all required , but to access m1() method of ProtectedA -> it is a must to extend "ProtectedA" class inside "ProtectedRunner" 
 		super.m1();
 	}
 	

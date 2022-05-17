@@ -33,9 +33,9 @@
     - filter
     - forEach
     - Method Reference
-15.  
+15.  and more..
 
-
+---
 **Miscellaneous Topics ::**
 
 1. One DCA Solution
@@ -46,5 +46,5 @@
 6. Schedular in Calendar
 7. OTP generation
 8. RAMDOM Password Generator
-9. 
+9. and more..
 

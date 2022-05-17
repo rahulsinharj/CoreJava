@@ -3,7 +3,7 @@ package java8Features.streamApi;
 import java.util.Arrays;
 import java.util.List;
 
-public class SteamApi_FindFirst {
+public class StreamApi3_FindFirst {
 
 	public static void main(String[] args) {
 		

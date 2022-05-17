@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class StreamApi_Filter {
+public class StreamApi2_Filter {
 
 	public static void main(String[] args) {
 	

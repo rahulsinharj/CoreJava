@@ -6,7 +6,7 @@ import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-public class StreamApi_Map {
+public class StreamApi1_Map {
 
 	public static void main(String[] args) {
 	

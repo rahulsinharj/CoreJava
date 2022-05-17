@@ -1,6 +1,6 @@
 # CoreJava
 
-**Here I have tried to cover below concepts ::
+**Here I have tried to cover below concepts ::**
 
 1. Funndamental Core Concepts of  Java 8
 2. Multithreading - Thread, Runnable, join, Deemon Thread, Interrupted, Synchronization, Inter Thread 
@@ -10,17 +10,18 @@
 6. Interface - using : default, static
 7. Functional Interface - using : Anonymous class, Lambda expression  
 8. Exception - Customizable
-9. Inner class - Anonymous Inner class, 
-                 AnonymousInnerClass using Lambda , 
-                 Member Inner Class, 
-                 Nested Inner Class
+9. Inner class - 
+                 a. Anonymous Inner class, 
+                 b. AnonymousInnerClass using Lambda ,
+                 c. Member Inner Class, 
+                 d. Nested Inner Class
 10. Enum 
 11. Annotations
 12. Stream API - map, filter, forEach, Method Reference
 13.  
 
 
-**Miscellaneous Topics ::
+**Miscellaneous Topics ::**
 
 1. One DCA Solution
 2. ArrayOfObject

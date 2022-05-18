@@ -2,25 +2,39 @@ package java8Features.streamApi;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-public class StreamApi2_Filter_Car {
+public class StreamApi2_Filter2_Car {
 
 	public static void main(String[] args) {
 		
 		List<Car> carList = Arrays.asList(
-								new Car("Toyota", "Black", 60000) ,
+								new Car("Toyota", "Black", 62000) ,
 								new Car("Benz", "White", 55000) ,
 								new Car("BMW", "Yellow", 70000) ,
-								new Car("Hyundai", "Black", 65000) ,
+								new Car("Hyundai", "Black", 68000) ,
 								new Car("Tata", "White", 40000) ,
 								new Car("Maruti", "Silver", 48000)
 							);
 		
 		System.out.println(carList);
 		
-		List<Car> newList = carList.stream().filter(x -> x.getPrice() >= 60000).collect(Collectors.toList());
+		Predicate<Car> pred = new Predicate<Car>() {
+			@Override
+			public boolean test(Car c) 
+			{
+				return c.getPrice() >= 60000;
+			}
+			
+		};
 		
+//		List<Car> newList = carList.stream().filter(pred).collect(Collectors.toList());
+
+//		List<Car> newList = carList.stream().filter(c -> c.getName().contains("T")).collect(Collectors.toList());
+
+		List<Car> newList = carList.stream().filter(c -> c.getPrice() >= 60000).collect(Collectors.toList());
+
 		for(Car c: newList)
 		{
 			System.out.println(c);

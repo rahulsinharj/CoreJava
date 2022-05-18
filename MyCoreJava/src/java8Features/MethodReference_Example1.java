@@ -3,7 +3,7 @@ package java8Features;
 import java.util.Arrays;
 import java.util.List;
 
-public class MethodReference_Demo {
+public class MethodReference_Example1 {
 
 	public static void main(String[] args) {
 	
@@ -11,7 +11,7 @@ public class MethodReference_Demo {
 		
 		// When using Lambda expression, Whenever you are working with a method of a class (which accepts parameter and process it and then return it), there you can use METHOD REFERENCE - as below :
 		
-		values.forEach(MethodReference_Demo::doubleEach);
+		values.forEach(MethodReference_Example1::doubleEach);
 
 	}
 	

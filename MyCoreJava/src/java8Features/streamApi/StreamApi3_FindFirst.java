@@ -10,9 +10,9 @@ public class StreamApi3_FindFirst {
 		List<Integer> listValues = Arrays.asList(12, 20, 35, 46, 55, 68, 75);
 
 		System.out.println(listValues.stream()
-				 .filter(i ->  i%5 == 0)			// Pass only those listValues which are divisible by 5	=> 20 35 55 75
-				 .map(i -> i*2)						// Multiply the resultant listValues by 2	=> 40 70 110 150
-				 .findFirst().orElse(0));			// Answer = 40 ;  if no ans then ans will be =0
+									 .filter(i ->  i%5 == 0)			// Pass only those listValues which are divisible by 5	=> 20 35 55 75
+									 .map(i -> i*2)						// Multiply the resultant listValues by 2	=> 40 70 110 150
+									 .findFirst().orElse(0));			// Answer = 40 ;  if no ans then ans will be =0
 
 		
 	// Prof of Lazy and Eager evaluation method ::
@@ -21,9 +21,9 @@ public class StreamApi3_FindFirst {
 		System.out.println("===========Checking for Lazy and Eager evaluation===========");
 		
 		System.out.println(listValues.stream()
-				 .filter(StreamApi3_FindFirst::isDivisible)				// filter() is a Lazy evaluation method
-				 .map(StreamApi3_FindFirst::mapDouble)					// map() is a Lazy evaluation method
-				 .findFirst().orElse(0));								// findFirst() is not a Lazy evaluation method , it is an Eager evaluation method or Terminal functional 
+									 .filter(StreamApi3_FindFirst::isDivisible)				// filter() is a Lazy evaluation method
+									 .map(StreamApi3_FindFirst::mapDouble)					// map() is a Lazy evaluation method
+									 .findFirst().orElse(0));								// findFirst() is not a Lazy evaluation method , it is an Eager evaluation method or Terminal functional 
 
 	}
 	

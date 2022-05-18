@@ -26,7 +26,7 @@ public class StreamApi_Filter_FlatMap2 {
 		
 		System.out.println(collectAllSetItems);		// Order of ITEMS is not preserved , since we have collected into SET.
 		
-		
+//------------------------------------------------		
 		crList.stream()
 		  .map(cr -> cr.items)				
 		  .flatMap(Collection::stream)	
@@ -34,7 +34,9 @@ public class StreamApi_Filter_FlatMap2 {
 		  .forEach(x -> System.out.print(x +" "));		// Order of ITEMS is preserved here. // Directly printing through forEach method
 
 		System.out.println();
-		
+
+//------------------------------------------------
+
 		List<String> collectList = crList.stream()
       		  .map(cr -> cr.items)				
       		  .flatMap(items -> items.stream())	

@@ -1,4 +1,4 @@
-package java8Features.streamApi;
+package java8Features.streamApi.map;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-public class StreamApi1_Map {
+public class StreamApi_Map {
 
 	public static void main(String[] args) {
 	

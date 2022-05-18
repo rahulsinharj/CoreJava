@@ -1,9 +1,9 @@
-package java8Features.streamApi;
+package java8Features.streamApi.map;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class StreamApi3_FindFirst {
+public class StreamApi_FindFirst {
 
 	public static void main(String[] args) {
 		
@@ -21,8 +21,8 @@ public class StreamApi3_FindFirst {
 		System.out.println("===========Checking for Lazy and Eager evaluation===========");
 		
 		System.out.println(listValues.stream()
-									 .filter(StreamApi3_FindFirst::isDivisible)				// filter() is a Lazy evaluation method
-									 .map(StreamApi3_FindFirst::mapDouble)					// map() is a Lazy evaluation method
+									 .filter(StreamApi_FindFirst::isDivisible)				// filter() is a Lazy evaluation method
+									 .map(StreamApi_FindFirst::mapDouble)					// map() is a Lazy evaluation method
 									 .findFirst().orElse(0));								// findFirst() is not a Lazy evaluation method , it is an Eager evaluation method or Terminal functional 
 
 	}

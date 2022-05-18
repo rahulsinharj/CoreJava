@@ -1,10 +1,10 @@
-package java8Features.streamApi;
+package java8Features.streamApi.filter;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class StreamApi2_Filter1 {
+public class StreamApi_Filter1 {
 
 	public static void main(String[] args) {
 	

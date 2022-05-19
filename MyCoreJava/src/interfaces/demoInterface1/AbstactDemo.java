@@ -1,4 +1,4 @@
-package interfaceDemo1;
+package interfaces.demoInterface1;
 
 abstract class MyAbstract
 {
@@ -17,23 +17,23 @@ abstract class MyAbstract
 	
 	public static void m2(){			
 		
-		System.out.println("Inside MyAbstract-M2 method");
+		System.out.println("Inside MyAbstract-AbstractClass-M2 method");
 	}
 	
 }
 
 public class AbstactDemo extends MyAbstract {
 
+	@Override
+	public void m1() {
+		System.out.println("Inside AbstactDemo-NormalClass-M1 method");
+	}
+	
 	public static void main(String[] args) {
 		
 		AbstactDemo obj = new AbstactDemo();
 		obj.m1();
 		MyAbstract.m2();
-	}
 
-	@Override
-	public void m1() {
-		System.out.println("Inside AbstactDemo-M1 method");
 	}
-
 }

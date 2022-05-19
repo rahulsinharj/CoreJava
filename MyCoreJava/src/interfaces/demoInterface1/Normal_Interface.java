@@ -1,4 +1,4 @@
-package interfaceDemo1;
+package interfaces.demoInterface1;
 
 interface Actor
 {

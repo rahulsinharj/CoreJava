@@ -1,6 +1,6 @@
-package interfaceDemo2;
+package interfaces.demoInterface2;
 
-public class MyImplA implements InterfaceZ {
+public class MyImplA implements MyInterface {
 
 	@Override
 	public void m1() {

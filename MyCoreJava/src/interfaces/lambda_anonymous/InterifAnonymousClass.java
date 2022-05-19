@@ -1,4 +1,4 @@
-package interfaceDemo3;
+package interfaces.lambda_anonymous;
 
 interface InterfABC
 {

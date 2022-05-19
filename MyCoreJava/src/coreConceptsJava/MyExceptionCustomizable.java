@@ -1,4 +1,4 @@
-package interfaceDemo3;
+package coreConceptsJava;
 
 public class MyExceptionCustomizable {
 

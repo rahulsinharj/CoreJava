@@ -1,4 +1,4 @@
-package interfaceDemo3;
+package interfaces.default_static;
 
 interface Actor
 {

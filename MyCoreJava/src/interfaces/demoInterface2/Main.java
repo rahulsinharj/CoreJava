@@ -1,11 +1,11 @@
-package interfaceDemo2;
+package interfaces.demoInterface2;
 
 public class Main {
 
 	public static void main(String[] args) {
 	
-//		InterfaceZ obj = new MyImplA();
-		InterfaceZ obj = new MyImplB();
+//		MyInterface obj = new MyImplA();
+		MyInterface obj = new MyImplB();
 		
 		obj.m1();
 		

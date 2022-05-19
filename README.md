@@ -29,8 +29,11 @@
 11. Enum class
 12. Annotations
 13. Stream API : 
+    - stream
     - map
+    - flatmap
     - filter
+    - reduce
     - forEach
     - Method Reference
 15.  and more..

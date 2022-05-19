@@ -1,4 +1,4 @@
-package coreJava;
+package coreConceptsJava;
 
 public class Test {
 

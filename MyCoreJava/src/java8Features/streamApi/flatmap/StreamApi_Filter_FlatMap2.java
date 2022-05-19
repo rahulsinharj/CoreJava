@@ -45,6 +45,15 @@ public class StreamApi_Filter_FlatMap2 {
 
 		System.out.println(collectList);
 		
+//------------------------------------------------
+
+		List<String> collectedList = crList.stream()
+      		  .flatMap(cr -> cr.items.stream())			// Using MAP & FLAT-mapping in same function
+      		  .distinct()								// Returning "Stream<String>"
+      		  .collect(Collectors.toList());			// Order of ITEMS is preserved here. // and Storing that List
+
+		System.out.println(collectedList);
+				
 	}
 }
 

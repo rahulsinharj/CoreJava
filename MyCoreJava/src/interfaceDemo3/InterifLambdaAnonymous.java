@@ -1,4 +1,4 @@
-package interfaceDemo2;
+package interfaceDemo3;
 
 interface InterfABCD
 {

@@ -1,4 +1,4 @@
-package interfaceDemo2;
+package interfaceDemo3;
 
 interface InterfABC
 {
@@ -22,13 +22,14 @@ public class InterifAnonymousClass {
 
 //		InterfABC obj = new ABCimpl();			// This is fine if we have an implemented class ABCimpl
 		
-		InterfABC obj = new InterfABC()
-				  {
-					  public void show(int i)					// Anonymous class - without any name, having only the implementation 
-					  {
-						  System.out.println("inside AnonymousClass show method : "+i);
-					  }
-				  };
+		InterfABC obj = new InterfABC() {
+			
+			@Override
+			public void show(int i)					// Anonymous class - without any name, having only the implementation 
+			{
+				System.out.println("inside AnonymousClass show method : "+i);
+			}
+		};
 		
 		obj.show(5);
 		

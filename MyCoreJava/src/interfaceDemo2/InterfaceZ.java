@@ -1,4 +1,4 @@
-package interfaceDemo1;
+package interfaceDemo2;
 
 //public interface InterfaceZ extends InterfaceX, InterfaceY{				// Multiples extends works fine.
 public interface InterfaceZ {

@@ -1,4 +1,4 @@
-package interfaceDemo1;
+package interfaceDemo2;
 
 public class MyImplA implements InterfaceZ {
 

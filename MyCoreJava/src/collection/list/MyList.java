@@ -32,13 +32,17 @@ public class MyList {
 		mylist.add(9);
 		
 		mylist.add(1, 5);					// Adding values in between through List<> interface
-		
 		System.out.println(mylist);
 		
 		Collections.sort(mylist);			// Sorting elements of List<> interface	
-	
 		System.out.println(mylist);
 	 
-		mylist.forEach(System.out::println);
+		Collections.reverse(mylist);		// Reverse-Sorting elements of List<> interface	
+		System.out.println(mylist);
+	 
+//		mylist.forEach(System.out::println);
+	
+		
+		
 	}
 }

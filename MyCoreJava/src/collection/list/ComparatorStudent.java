@@ -17,7 +17,7 @@ public class ComparatorStudent {
 		
 		
 		Collections.sort(studs, (s1,s2)->{
-			return s1.marks > s2.marks ? -1 : s1.marks < s2.marks ? 1 : 0;
+			return s1.marks > s2.marks ? -1 : s1.marks < s2.marks ? 1 : 0;		// Sorting based on marks - Descending order
 		});
 		
 		

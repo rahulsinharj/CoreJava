@@ -60,7 +60,7 @@ class Address implements Comparable<Address>
 		
 		if(cityCompare == 0)			// If both city are equal then Sorting based on "pincode" - Ascending order
 		{
-			return this.pincode < ad.pincode ? -1 : this.pincode > ad.pincode ? 1 : 0;
+			return this.pincode < ad.pincode ? -1 : (this.pincode > ad.pincode ? 1 : 0);
 		}
 		else {							// Sorting based on city {Ascending order}, 	
 			return cityCompare;						// if both city are unequal {and provides some +ve or -ve values in "cityCompare" through compareTo} 

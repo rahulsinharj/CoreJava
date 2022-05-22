@@ -19,8 +19,8 @@ public class MyList {
 											
 		System.out.println(clist);
 		
-		Collections.sort(clist);	// The method sort(List<T>) in the type Collections is not applicable for the arguments (Collection<Integer>)	
-									// Collections.sort() does not accepts Collection<> interface reference ; only accepts List<> interface reference
+		Collections.sort(clist);	// Collections.sort(List<T> list) only accepts List<> interface reference ; It does not accepts Collection<> interface reference.
+									// Therefore sort(List<T>) method in the class "Collections" is not applicable for the arguments (Collection<Integer>)	
 */	
 		
 /*	=> Working with List<> interface :: 

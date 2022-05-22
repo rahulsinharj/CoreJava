@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 //	SORTING PREMITIVE DATATYPES ::
-public class StreamApi_Sorted_Primitive {			
+public class StreamApi_Sort_PrimitiveLIST {			
 
 	public static void main(String[] args) {
 	

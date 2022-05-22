@@ -9,7 +9,7 @@ import java.util.List;
   		In that case we need to write our own custom compare() logic - using Comparator<> or Comparable<>	
 */
 //	SORTING CUSTOM-CLASS - based on a SPECIFIC FIELD ::
-public class StreamApi_Sorted_Employee {
+public class StreamApi_Sort_EmployeeLIST {
 
 	public static void main(String[] args) {
 	

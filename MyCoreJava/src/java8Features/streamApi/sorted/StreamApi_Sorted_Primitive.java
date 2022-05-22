@@ -24,6 +24,7 @@ public class StreamApi_Sorted_Primitive {
 		
 		list.stream().sorted().forEach(s -> System.out.print(s +" "));			// 3 4 8 12  
 	
+		// REVERSE ORDER Sorting ::
 		list.stream().sorted(Collections.reverseOrder()).forEach(s -> System.out.print(s +" "));	// 12 8 4 3 
 		
 		

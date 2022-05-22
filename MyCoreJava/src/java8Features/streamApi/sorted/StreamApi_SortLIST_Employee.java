@@ -5,11 +5,13 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import java8Features.entity.Employee;
+
 /*	If we have Custom class , and we want to do sorting based on a specific field (based on EmpId, or EmpSalary - we want to sort)
   		In that case we need to write our own custom compare() logic - using Comparator<> or Comparable<>	
 */
 //	SORTING CUSTOM-CLASS - based on a SPECIFIC FIELD ::
-public class StreamApi_Sort_EmployeeLIST {
+public class StreamApi_SortLIST_Employee {
 
 	public static void main(String[] args) {
 	
@@ -42,59 +44,21 @@ public class StreamApi_Sort_EmployeeLIST {
 //============[Sorting using StreamAPI approach ::]=============// Stream<Employee> java.util.stream.Stream.sorted(Comparator<? super Employee> comparator)
 			
 //		elist.stream().sorted((e1,e2) -> (int)(e2.getSalary() - e1.getSalary())).forEach(System.out::println);
+//		System.out.println("------------------------------------");
 		
 //=====[Using method reference ::]========// <T, U> Comparator<T> java.util.Comparator.comparing(Function<? super T, ? extends U> keyExtractor)	// just like map() method => emp -> emp.getSalary()
 	
-//		elist.stream().sorted(Comparator.comparing(emp -> emp.getSalary())).forEach(System.out::println);	// Salary-based Emp sorting - Ascending order
-		elist.stream().sorted(Comparator.comparing(Employee :: getId)).forEach(System.out::println);		// Id-based Emp sorting - Ascending order
-	
+//		elist.stream().sorted(Comparator.comparing(emp -> emp.getSalary())).forEach(System.out::println);			// Salary-based Emp sorting - Ascending order
+//		System.out.println("------------------------------------");
+		
+		elist.stream().sorted(Comparator.comparing(Employee :: getId)).forEach(System.out::println);				// Id-based Emp sorting - Ascending order
+		System.out.println("------------------------------------");
+		
+		elist.stream().sorted(Comparator.comparing(Employee :: getId).reversed()).forEach(System.out::println);		// Id-based Emp sorting - Descending order
+		System.out.println("------------------------------------");
+		
 		
 	}
 }
 
-class Employee		// Custom class - for List<Employee>
-{
-	private int id;
-	private String name;
-	private String dept;
-	private long salary;
-	
-	public Employee(int id, String name, String dept, long salary) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.dept = dept;
-		this.salary = salary;
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getDept() {
-		return dept;
-	}
-	public void setDept(String dept) {
-		this.dept = dept;
-	}
-	public long getSalary() {
-		return salary;
-	}
-	public void setSalary(long salary) {
-		this.salary = salary;
-	}
-	@Override
-	public String toString() {
-		return "Employee [id= " + id + ", name= " + name + ", dept= " + dept + ", salary= " + salary + "]";
-	}
-	
-	
-	
-}
+

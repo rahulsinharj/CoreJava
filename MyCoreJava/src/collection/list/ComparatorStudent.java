@@ -33,7 +33,8 @@ public class ComparatorStudent {
 		
 		
 		Collections.sort(studs, (s1,s2) -> {									// Using Lambda inner implementation
-			return s1.marks > s2.marks ? -1 : s1.marks < s2.marks ? 1 : 0;		// Sorting based on marks - Descending order
+//			return s1.marks > s2.marks ? -1 : s1.marks < s2.marks ? 1 : 0;		// Sorting based on marks - Descending order
+			return s2.marks - s1.marks;
 		});
 		
 		

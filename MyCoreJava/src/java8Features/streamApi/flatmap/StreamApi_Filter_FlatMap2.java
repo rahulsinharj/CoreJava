@@ -22,7 +22,7 @@ public class StreamApi_Filter_FlatMap2 {
 		Set<String> collectAllSetItems = crList.stream()							// Convert the List into Stream
 												.map(cr -> cr.items)				// Map transforms one obj into another form, here each "Cricketer obj" is transformed into Cricketer.items   
 												.flatMap(Collection::stream)		// Convert the "Stream of <List<String>>" into "Stream of <String>" ; since Cricketer.items is List<String> not String.   
-												.collect(Collectors.toSet());		// Collecting the stream into SET(for removing duplicate items) 	// We can also use Collectors.toList() - duplicate items will remain here.       
+												.collect(Collectors.toSet());		// Collecting the stream into SET(for removing duplicate items) 	// We can also use Collectors.toList() - but duplicate items will remain here.       
 		
 		System.out.println(collectAllSetItems);		// Order of ITEMS is not preserved , since we have collected into SET.
 		
@@ -30,8 +30,8 @@ public class StreamApi_Filter_FlatMap2 {
 		crList.stream()
 		  .map(cr -> cr.items)				
 		  .flatMap(Collection::stream)	
-		  .distinct()									// Returning "Stream<String>"
-		  .forEach(x -> System.out.print(x +" "));		// Order of ITEMS is preserved here. // Directly printing through forEach method
+		  .distinct()									// Distinct Non Duplicate items - Returning "Stream<String>"
+		  .forEach(x -> System.out.print(x +" "));		// Directly printing through forEach method	// Order of ITEMS is preserved here. 
 
 		System.out.println();
 
@@ -40,8 +40,8 @@ public class StreamApi_Filter_FlatMap2 {
 		List<String> collectList = crList.stream()
       		  .map(cr -> cr.items)				
       		  .flatMap(items -> items.stream())	
-      		  .distinct()								// Returning "Stream<String>"
-      		  .collect(Collectors.toList());			// Order of ITEMS is preserved here. // and Storing that List
+      		  .distinct()								// Distinct Non Duplicate items - Returning "Stream<String>"
+      		  .collect(Collectors.toList());			// Storing that List and then printing	// Order of ITEMS is preserved here. 
 
 		System.out.println(collectList);
 		

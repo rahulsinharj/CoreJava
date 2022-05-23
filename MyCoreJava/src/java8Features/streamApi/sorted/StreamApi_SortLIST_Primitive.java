@@ -3,6 +3,7 @@ package java8Features.streamApi.sorted;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.IntStream;
 
 //	SORTING PREMITIVE DATATYPES ::
 public class StreamApi_SortLIST_Primitive {			
@@ -14,6 +15,10 @@ public class StreamApi_SortLIST_Primitive {
 		list.add(3);
 		list.add(12);
 		list.add(4);
+		
+		int intMin = list.stream().mapToInt(i->i).min().getAsInt();		// Finding min value
+		System.out.println(intMin);
+		
 		
 		Collections.sort(list);				// [3, 4, 8, 12]
 		System.out.println(list);

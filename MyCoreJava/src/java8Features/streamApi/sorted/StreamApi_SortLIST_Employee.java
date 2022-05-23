@@ -37,14 +37,14 @@ public class StreamApi_SortLIST_Employee {
 				
 //		Collections.sort(elist, comp);				// Custom Sorting using "Anonymous class implementation" of Comparator<Employee> functional interface
 
-//		Collections.sort(elist, (e1,e2) -> (int)(e2.getSalary() - e1.getSalary()));		// Custom Sorting using "Lambda implementation" of Comparator<Employee> functional interface
-//		elist.forEach(System.out::println);
-		
+		Collections.sort(elist, (e1,e2) -> (int)(e2.getSalary() - e1.getSalary()));		// Custom Sorting using "Lambda implementation" of Comparator<Employee> functional interface
+		elist.forEach(System.out::println);
+		System.out.println("------------------------------------");
 		
 //============[Sorting using StreamAPI approach ::]=============// Stream<Employee> java.util.stream.Stream.sorted(Comparator<? super Employee> comparator)
 			
-//		elist.stream().sorted((e1,e2) -> (int)(e2.getSalary() - e1.getSalary())).forEach(System.out::println);
-//		System.out.println("------------------------------------");
+		elist.stream().sorted((e1,e2) -> (int)(e2.getSalary() - e1.getSalary())).forEach(System.out::println);
+		System.out.println("------------------------------------");
 		
 //=====[Using method reference ::]========// <T, U> Comparator<T> java.util.Comparator.comparing(Function<? super T, ? extends U> keyExtractor)	// just like map() method => emp -> emp.getSalary()
 	

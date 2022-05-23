@@ -28,14 +28,14 @@ class MyPrinter
 	}
 }
 
-public class MethodReference_Example2 {
+public class MethodReference_PrinterParsingExample {
 
 	public static void main(String[] args) 
 	{
 		String myStr = "RahulSinha";
 		MyPrinter myPrinter = new MyPrinter();
 		
-//===================================================		
+//---------------------------------------------------	
 		myPrinter.print(myStr, new Parser() {
 			
 			@Override										// Using Anonymous class implementation
@@ -44,16 +44,16 @@ public class MethodReference_Example2 {
 			}
 		});
 		
-//===================================================
+//---------------------------------------------------
 		myPrinter.print(myStr, (str) -> {					// Using Lambda implementation of Functional interface
 				return StringParser.convert(myStr);
 			}
 		);
 
-//===================================================		
+//---------------------------------------------------	
 		myPrinter.print(myStr, str -> StringParser.convert(myStr));		// StringParser.convert() method ke andar ka logic yaha bhi likh skte the, but uske bajaye hamne wo chije iss method me rakh ke kewal method call karna easy samjha.  
 
-//===================================================
+//---------------------------------------------------
 		myPrinter.print(myStr, StringParser::convert);		// providing interface implementation using METHOD REFERENCE
 
 

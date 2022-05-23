@@ -30,12 +30,12 @@ public class StreamApi_Map {
 	  Ques - How can we ingnore Mutation , how can we write a code without much mutation ?
 	  Ans - Stream APIs.
   
- *	stream() method of List/Collection :: returns the object of Stream Interface.
+ =>	stream() method of List/Collection :: returns the object of Stream Interface.
  
- *	map() method of Stream interface :: It is used for transforming the data - accepts Function interface (which is a functional interface, therefore we can use here Lambda interface.)
+ => map() method of Stream interface :: It is used for transforming the data - accepts Function interface (which is a functional interface, therefore we can use here Lambda interface.)
 									  - It returns a stream consisting of the results of applying the given function to the elements of this stream.			
 	
- *	reduce() method :: It is used for Aggregating the data - i.e, combine Stream of element and produces a single output.
+ => reduce() method :: It is used for Aggregating the data - i.e, combine Stream of element and produces a single output.
 */
 		
 //======Elaborated below ::==========	

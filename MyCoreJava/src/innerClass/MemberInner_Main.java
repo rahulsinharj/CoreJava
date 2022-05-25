@@ -14,7 +14,7 @@ class A
 	
 }
 
-public class MemberInnerClass {
+public class MemberInner_Main {
 
 	public static void main(String[] args) {
 	

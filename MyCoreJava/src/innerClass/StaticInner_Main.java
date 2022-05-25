@@ -14,7 +14,7 @@ class C
 	
 }
 
-public class NestedInnerClass {						// using static (i.e, static inner class)
+public class StaticInner_Main {						// using static (i.e, static inner class)
 
 	public static void main(String[] args) {
 		

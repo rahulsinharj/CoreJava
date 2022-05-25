@@ -7,7 +7,7 @@ public class Student
 	private String city;
 	private String subject;
 	
-	private Student(StudentBuilder studentBuilder) {
+	private Student(StudentBuilder studentBuilder) {		// Outer class constructor should be private, only accessible to inner class. 
 		this.name = studentBuilder.name;
 		this.age = studentBuilder.age;
 		this.city = studentBuilder.city;

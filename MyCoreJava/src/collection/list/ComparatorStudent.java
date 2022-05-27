@@ -16,7 +16,7 @@ public class ComparatorStudent {
 		studs.add(new Student(104,45));
 		studs.add(new Student(105,85));
 		
-/* We will user Comparator<> when we have a class "Student"	which is not implementing Comparable<> , 
+/* We will use Comparator<> when we have a class "Student"	which is not implementing Comparable<> , 
   		in that case we can provide our comparing/sorting Logic by providing implementation of Comparator<Student>  
  
  * Or even if our "Student" class is already implementing Comparator<> , and after if we want to change the sorting logic, then better to provide our own implementation through Comparable<>		*/		

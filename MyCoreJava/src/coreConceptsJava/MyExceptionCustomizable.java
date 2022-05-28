@@ -18,7 +18,7 @@ public class MyExceptionCustomizable {
 	}
 }
 
-class MyException extends Exception
+class MyException extends RuntimeException   // or, extends Exception 
 {
 	public MyException(String msg)
 	{

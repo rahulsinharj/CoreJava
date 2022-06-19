@@ -42,7 +42,7 @@ public class EnumExample {
 		System.out.println(Mobile.SAMSUNG +"	--  "+Mobile.SAMSUNG.ordinal()+"	-- "+Mobile.SAMSUNG.getPrice());
 		System.out.println(Mobile.POCO +"	--  "+Mobile.POCO.ordinal()+"	-- "+Mobile.POCO.getPrice());
 
-		Mobile[] mobs = Mobile.values();					// This values() method is not inside ENUM class, but it is automatically given by Java compiler/JVM. Not even in Object class.    
+		Mobile[] mobs = Mobile.values();						// This values() method is not inside ENUM class, but it is automatically given by Java compiler/JVM. Not even in Object class.    
 		System.out.println(Arrays.toString(mobs));
 
 		

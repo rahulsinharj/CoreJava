@@ -11,7 +11,7 @@ enum Mobile 					// Creating ENUM outside the class   // We cannot extends any o
 {																	// But we only can implement any INTERFACE into this ENUM Mobile			
 	APPLE(20), SAMSUNG, POCO;
 
-	int price;			// Ye instance variable "price" iss ENUM class ke sabhi enum objects (eg- APPLE, SAMSUNG, POCO) ko milega
+	int price;
 
 	Mobile() 
 	{

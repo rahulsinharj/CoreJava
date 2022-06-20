@@ -19,9 +19,9 @@ public class ComparatorDemo {
 		Comparator<Integer> comp = new Comparator<Integer>() 
 		{
 			@Override
-			public int compare(Integer i1, Integer i2) 
+			public int compare(Integer i, Integer j) 
 			{
-				if(i1%10 > i2%10)			// Sorting based on the unit places - that unit digit we can get by modulo_10
+				if(i%10 > j%10)			// Sorting based on the unit places - that unit digit we can get by modulo_10
 					return 1;
 				else
 					return -1;
@@ -29,7 +29,8 @@ public class ComparatorDemo {
 		};
 		
 		Collections.sort(list, comp);
-//		Collections.sort(list, (i1,i2) -> i1%10 > i2%10 ? 1 : -1);			// same logic using lambda expression
+//		Collections.sort(list, (i,j) -> i%10 > j%10 ? 1 : -1);			// same logic using lambda expression
+//		Collections.sort(list, (i,j) -> i%10 - j%10 );					// same logic better approach & also using lambda expression   
 		
 		list.forEach(System.out::println);
 		

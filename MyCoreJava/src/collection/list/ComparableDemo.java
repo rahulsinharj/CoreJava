@@ -9,12 +9,14 @@ public class ComparableDemo {
 	public static void main(String[] args) {
 		
 		List<Address> address = new ArrayList<>();
+		address.add(new Address(185, "Patna"));
 		address.add(new Address(105, "Patna"));
 		address.add(new Address(104, "Gaya"));
 		address.add(new Address(153, "Delhi"));
 		address.add(new Address(111, "Delhi"));
 		address.add(new Address(102, "Noida"));
 		address.add(new Address(109, "Gurgaon"));
+		address.add(new Address(195, "Patna"));
 		address.add(new Address(107, "Assam"));
 		
 		Collections.sort(address);

@@ -31,13 +31,42 @@ enum Mobile 					// Creating ENUM outside the class   // We cannot extends any o
 
 public class EnumExample {
 
-	enum Book // Creating ENUM inside the class
+	enum Student							// Creating ENUM inside the class
 	{
-		MyJava, MyPython, MySpringBoot;
+		Ram, Shyam, Geeta, Pawan, Priya
+	}
+	
+	enum Book 								// Creating ENUM having some values - to be provided as parameter through private constructor
+	{
+		MyJava("java8"), MyPython("python3"), MySpringBoot("springboot4");
+		String value;
+		
+		private Book(String value)
+		{
+			this.value = value;
+		}
 	}
 
-	public static void main(String[] args) {
-
+	public static void main(String[] args) 
+	{
+		System.out.println(Student.Pawan);
+		System.out.println(Student.Shyam);
+		System.out.println(Student.Geeta);
+		System.out.println(Student.Pawan);
+		System.out.println(Student.Priya);
+		
+		Student[] studs = Student.values();
+		System.out.println(Arrays.toString(studs));
+		
+		System.out.println("===========================================");
+		
+		System.out.println(Book.MyJava);
+		System.out.println(Book.MyJava.value);
+		System.out.println(Book.MyPython);
+		System.out.println(Book.MySpringBoot);
+		
+		System.out.println("===========================================");
+		
 		System.out.println(Mobile.APPLE +"	--  "+Mobile.APPLE.ordinal() +"	-- "+Mobile.APPLE.getPrice());						// Mobile.APPLE.ordinal() => ordinal() means the order of ENUM object (here APPLE)  
 		System.out.println(Mobile.SAMSUNG +"	--  "+Mobile.SAMSUNG.ordinal()+"	-- "+Mobile.SAMSUNG.getPrice());
 		System.out.println(Mobile.POCO +"	--  "+Mobile.POCO.ordinal()+"	-- "+Mobile.POCO.getPrice());
@@ -45,10 +74,6 @@ public class EnumExample {
 		Mobile[] mobs = Mobile.values();						// This values() method is not inside ENUM class, but it is automatically given by Java compiler/JVM. Not even in Object class.    
 		System.out.println(Arrays.toString(mobs));
 
-		
-		System.out.println(Book.MyJava);
-		System.out.println(Book.MyPython);
-		System.out.println(Book.MySpringBoot);
 
 		Mobile m = Mobile.SAMSUNG;
 

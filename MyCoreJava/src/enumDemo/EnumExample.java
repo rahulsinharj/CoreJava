@@ -62,8 +62,10 @@ public class EnumExample {
 		
 		System.out.println(Book.MyJava);
 		System.out.println(Book.MyJava.value);
-		System.out.println(Book.MyPython);
-		System.out.println(Book.MySpringBoot);
+		
+		System.out.println(Book.MyPython.value);
+		System.out.println(Book.MySpringBoot.value);
+		
 		
 		System.out.println("===========================================");
 		

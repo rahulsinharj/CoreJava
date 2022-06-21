@@ -2,8 +2,8 @@ package designPattern.singleton;
 
 public class SingletonPattern_InnerClass {
 
-	public static void main(String[] args) {
-
+	public static void main(String[] args) 
+	{
 		Thread th1 = new Thread(new Runnable() {
 			@Override
 			public void run() {
@@ -32,7 +32,7 @@ class SingletonS
 		System.out.println("Instance Created !");
 	}
 
-	// Inner class to provide instance of class
+	// Static Inner class to provide instance of class
 	private static class BillPughSingleton 
 	{
 		private static final SingletonS obj = new SingletonS();

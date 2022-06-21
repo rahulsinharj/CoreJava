@@ -1,13 +1,12 @@
 package designPattern.singleton;
 
-public class SingletonPattern_Demo {		// Creates 1 object - per JVM
+public class SingletonPattern_UsingSynchronizedBlock {		// Creates 1 object - per JVM
 
 	public static void main(String[] args) 
 	{
 		Thread th1 = new Thread(new Runnable() {
 			@Override
-			public void run() 
-			{
+			public void run() {
 				MySingleton obj = MySingleton.getInstance();
 				System.out.println("obj1 "+obj +" | Hashcode= "+obj.hashCode());
 			}
@@ -51,7 +50,8 @@ class MySingleton
  # Double checking for NULL -> because let's say there are 2 threads T1 & T2. And let's T1 & T2  both thread both passes first_IF_check_condition and enter into it.
  			And then due to synchronized block only one thread (let's say T1 thread) enters into synchronized block and T2 thread wait for till it's completion.
  			Since T1 thread is already ==NULL , therefore it will create a new INSTANCE OBJECT.
- 			And now, T2 thread will get a chance to come inside synchronized block => kayade se ab synchronized block me aa to gaya hai T2 thread, but T1 thread ke karan already 1 INSTANCE obj bana ja chuka hai, to ab aur koi new INSTANCE obj nhi banne dena chahiye, bhale hi synchronized block me enter hogya ho T2 ka control flow.
+ 			And now since T1 has completed its work, so now the T2 thread will get a change to enter into synchronized block 
+ 					=> kayade se ab synchronized block me aa to gaya hai T2 thread, but T1 thread ke karan already 1 INSTANCE obj bana ja chuka hai, to ab aur koi new INSTANCE obj nhi banne dena chahiye, bhale hi synchronized block me T2 ka control flow enter hogya ho.
  			Therefore, again we will check ki bich kuch time me obj ref me INSTANCE obj to nhi aagya n, isliye fir se null check rahe hai even inside synchronized block. 
  						
 */	

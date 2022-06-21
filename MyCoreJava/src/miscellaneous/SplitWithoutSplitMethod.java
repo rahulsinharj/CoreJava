@@ -28,8 +28,8 @@ public class SplitWithoutSplitMethod {
 			} 
 			else if (ch == ';') 
 			{
-				list.add(temp);
-				temp = "";
+				list.add(temp);			// kyuki ab ";" mila hai, to Purana piche ka temp string ko arraylist me daal do, 
+				temp = "";				// aur uss temp string ko blank kar do, for undergoing same way aage bhi.	
 			}
 		}
 		

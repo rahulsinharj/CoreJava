@@ -8,12 +8,12 @@ public class SplitWithoutSplitMethod {
 
 		String str = "rah;ul;;sin;ha";
 		
-		ArrayList<String> splitResult = splitBySemColon(str);
+		ArrayList<String> splitResult = splitBySemiColon(str);
 		System.out.println(splitResult);
 	
 	}
 
-	public static ArrayList<String> splitBySemColon(String str) 
+	public static ArrayList<String> splitBySemiColon(String str) 
 	{
 		ArrayList<String> list = new ArrayList<>();
 

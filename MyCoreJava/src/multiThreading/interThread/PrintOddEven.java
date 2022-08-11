@@ -38,7 +38,7 @@ class OddEvenInsertWork
 			}
 			else 
 			{
-				arr[oddIndex] = 1;
+				arr[oddIndex] = 3;
 				oddIndex += 2;
 
 				evenDone = false;
@@ -55,10 +55,16 @@ public class PrintOddEven {
 
 		OddEvenInsertWork obj = new OddEvenInsertWork();
 		
-		Thread th1 = new Thread(() -> {
-	
-			obj.insertEven();
+		Thread th1 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				obj.insertEven();
+				
+			}
 		});
+			
+
 
 		Thread th2 = new Thread(() -> {
 	

@@ -1,10 +1,10 @@
-package com.passwordSecure;
+package demo;
 
 import java.util.Base64;
 import java.util.Base64.Decoder;
 import java.util.Base64.Encoder;
 
-public class JavaBase64 {
+public class PasswordSecure_using_JavaBase64 {
 
 	public static void main(String[] args) 
 	{

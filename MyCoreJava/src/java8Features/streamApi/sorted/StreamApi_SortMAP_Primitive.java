@@ -19,7 +19,7 @@ public class StreamApi_SortMAP_Primitive {
 		map.put("eight", 8);
 		
 		
-//==========[ Collections.sort(List<T>) always accepts a List ; therefore we have to extract list values from HashMap]=== 
+//===[ Collections.sort(List<T>) always accepts a List ; therefore we have to extract list values from HashMap] =>  Convert MAP into "EntrySet" ]=== 
 		
 		ArrayList<Entry<String, Integer>> entryList = new ArrayList<>(map.entrySet());	// map.entrySet() returns a set view of all the mappings (entries) present in the hashmap.     
 		
@@ -56,6 +56,7 @@ public class StreamApi_SortMAP_Primitive {
 		
 		map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
 		System.out.println("------------------------------------");
+		
 		
 	}
 }

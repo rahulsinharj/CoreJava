@@ -16,7 +16,7 @@ class Boy implements Cloneable {
 	
 }
 
-public class ObjectCloning {
+public class ObjectCloning_using_Cloneable {
 
 	public static void main(String[] args) {
 

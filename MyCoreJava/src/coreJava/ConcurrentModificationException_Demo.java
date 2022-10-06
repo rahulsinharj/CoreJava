@@ -1,4 +1,4 @@
-package demo;
+package coreJava;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,17 +16,20 @@ public class ConcurrentModificationException_Demo {
 			if (ch.equals("a"))
 				chList.remove(ch);
 
-			System.out.println(chList.size());
+//			System.out.println(chList.size());
 		}
 
+		// Below code will occur ConcurrentModificationException 
+		
 //		for (String ch : chList) {
 //			if (ch.equals("a"))
-//				list.remove(ch);
+//				chList.remove(ch);
 //		}
 
 		System.out.println(chList);
-
 		System.out.println("=============================================");
+	
+//-------------------------------------------------------------------------------------------------------------------
 		
 		List<String> sList = new ArrayList<>(Arrays.asList("vikas", "shivam", "rahul", "gaurav"));
 
@@ -49,3 +52,14 @@ public class ConcurrentModificationException_Demo {
 		
 	}
 }
+
+/*	This java.util.ConcurrentModificationException occur when we remove elements while iterating ArrayList in java. 
+  
+ *	Even though ArrayList provides remove() method, we cannot use that to remove item while iterating over ArrayList in java, because they will throw concurrent modification exception.
+ *	The right way to remove elements from ArrayList while iterating over it is – by using Iterator remove() method, instead of ArrayList remove() method.
+ 
+ *	While using Iterator -> ConcurrentModificationException doesn't occur, because it also removes the current element and also updates the counter and variables used by Iterator like modeCount, which indicate that the modification is done by the Iterator itself, not somewhere around.
+  
+*/
+
+

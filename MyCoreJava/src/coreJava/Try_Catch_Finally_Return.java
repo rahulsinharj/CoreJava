@@ -25,3 +25,20 @@ public class Try_Catch_Finally_Return {
 	
 	}
 }
+/*
+
+ *	If the return in the try block is reached, it transfers control to the finally block, and the function eventually returns normally (not a throw).
+	
+ *	If an exception occurs, but then the code reaches a return from the catch block, control is transferred to the finally block and the function eventually returns normally (not a throw).
+	
+ *	Also even if you didn't have the catch and if an exception were thrown in the try block and not caught. By doing a return from the finally block, you suppress the exception entirely.
+
+
+		https://stackoverflow.com/questions/15225819/try-catch-finally-return-clarification/
+*/
+
+
+
+
+
+

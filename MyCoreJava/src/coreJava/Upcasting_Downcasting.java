@@ -35,7 +35,7 @@ public class Upcasting_Downcasting {
 		
 //		Child c = new Parent(); 			// This line will give compile-time error
 //		Child c = (Child)new Parent();  	// This line will give "java.lang.ClassCastException" :: class demo.Parent cannot be cast to class demo.Child 
-		Child c = (Child)p;   
+		Child c = (Child)p;   				// This line won't give any compilation error, because at the end "Child c" me jo "p" daal rahe hai wo "new Child()" object se hi bana hai, matlab anyhow CHILD ka object hi hai.  
 		
 		c.showMessage();   
 		

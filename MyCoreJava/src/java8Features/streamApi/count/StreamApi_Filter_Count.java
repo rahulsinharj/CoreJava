@@ -1,4 +1,4 @@
-package java8Features.streamApi.filter;
+package java8Features.streamApi.count;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class StreamApi_Filter4_Count {					// Using StreamAPI + filter() + count() 
+public class StreamApi_Filter_Count {					// Using StreamAPI + filter() + count() 
 
 	public static void main(String[] args) 
 	{

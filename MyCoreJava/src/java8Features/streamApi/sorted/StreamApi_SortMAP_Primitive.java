@@ -48,11 +48,17 @@ public class StreamApi_SortMAP_Primitive {
 		
 //============[Using STREAMAPI ::]===============		
 	
+		// Comparing by KEY ::
 		map.entrySet().stream().sorted((e1, e2) -> e1.getKey().compareTo(e2.getKey())).forEach(System.out::println);
 		System.out.println("------------------------------------");	
 		
 		map.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println);
 		System.out.println("------------------------------------");
+		
+		
+		// Comparing by VALUE ::		
+		map.entrySet().stream().sorted((e1 ,e2) -> e1.getValue() - e2.getValue()).forEach(System.out::println);
+		System.out.println("------------------------------------");	
 		
 		map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
 		System.out.println("------------------------------------");

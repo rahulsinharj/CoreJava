@@ -20,7 +20,7 @@ public class Try_Catch_Finally_Return {
 		} 
 		finally {
 			System.out.println("I am in finally block");
-			return 50;										// 
+			return 50;										// Finally overrides try return value
 		}
 	
 	}

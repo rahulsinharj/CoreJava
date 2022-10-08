@@ -1,6 +1,6 @@
 package coreJava;
 
-public class StringImmutability_Demo {
+public class String_Immutability_Demo {
 
 	public static void main(String[] args) {
 

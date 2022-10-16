@@ -1,4 +1,4 @@
-package coreJava;
+package CoreJAVA;
 
 /*	Upcasting is the typecasting of a child object to a parent object.
   

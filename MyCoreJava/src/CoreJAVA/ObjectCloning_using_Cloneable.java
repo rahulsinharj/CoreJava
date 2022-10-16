@@ -1,4 +1,4 @@
-package coreJava;
+package CoreJAVA;
 
 class Boy implements Cloneable {
 	int pen;

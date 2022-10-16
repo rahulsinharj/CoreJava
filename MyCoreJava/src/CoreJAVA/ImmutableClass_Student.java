@@ -1,4 +1,4 @@
-package coreJava;					//Java Program to Create An Immutable Class
+package CoreJAVA;					//Java Program to Create An Immutable Class
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package coreJava;
+package CoreJAVA;
 
 public class MyExceptionCustomizable {
 

@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class StreamApi_SortMAP_Primitive {
+public class SortMAP_Primitive {
 
 	public static void main(String[] args) {
 		

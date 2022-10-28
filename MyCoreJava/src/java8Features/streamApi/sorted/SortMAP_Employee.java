@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 import java8Features.entity.Employee;
 
-public class StreamApi_SortMAP_Employee {
+public class SortMAP_Employee {
 
 	public static void main(String[] args) {
 	

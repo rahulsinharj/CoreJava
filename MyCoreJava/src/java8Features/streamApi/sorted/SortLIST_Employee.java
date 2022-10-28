@@ -11,7 +11,7 @@ import java8Features.entity.Employee;
   		In that case we need to write our own custom compare() logic - using Comparator<> or Comparable<>	
 */
 //	SORTING CUSTOM-CLASS - based on a SPECIFIC FIELD ::
-public class StreamApi_SortLIST_Employee {
+public class SortLIST_Employee {
 
 	public static void main(String[] args) {
 	

@@ -2,11 +2,12 @@ package java8Features.streamApi.sorted;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.IntStream;
 
 //	SORTING PREMITIVE DATATYPES ::
-public class StreamApi_SortLIST_Primitive {			
+public class SortLIST_Primitive {			
 
 	public static void main(String[] args) {
 	
@@ -37,7 +38,8 @@ public class StreamApi_SortLIST_Primitive {
 		
 		
 		// REVERSE ORDER Sorting ::
-		list.stream().sorted(Collections.reverseOrder()).forEach(s -> System.out.print(s +" "));	// 12 8 4 3 
+//		list.stream().sorted(Collections.reverseOrder()).forEach(s -> System.out.print(s +" "));	// 12 8 4 3 
+		list.stream().sorted(Comparator.reverseOrder()).forEach(s -> System.out.print(s +" "));		// 12 8 4 3 
 		
 		
 	}

@@ -67,9 +67,13 @@ public class Hashcode_and_Equals_Set
 	}
 }
 
-/*	We know that two objects are considered equal only if their references point to the same object, 
-  		and unless we override equals and hashCode methods, the class object will not behave properly 
+/*	We know that two objects are considered equal only if their references point to the same object. 
+  	If we don't override the Object.equals() method : and if we want to check the equality of two objects(based on their content), 
+  		then bydefault Object.equals() method just checks the references of the objects, not the content (values of instance variables).		
+  	
+ * 	So unless we override equals and hashCode methods, the class object will not behave properly 
   		on hash-based collections like HashMap, HashSet, and Hashtable. 
+  		
  * 	This is because hash-based collections are organized like a sequence of buckets, 
   		and the hash code value of an object is used to determine the bucket where the object would be stored, 
   		and the same hash code is used again to find the object’s position in the bucket. 

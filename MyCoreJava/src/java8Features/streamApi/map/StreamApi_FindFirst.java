@@ -1,5 +1,6 @@
 package java8Features.streamApi.map;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -18,13 +19,21 @@ public class StreamApi_FindFirst {
 	// Prof of Lazy and Eager evaluation method ::
 	// filter() and  map() are very efficient methods(do not traverse the entire loop or list) , since they are Lazy evaluation methods
 		
-		System.out.println("===========Checking for Lazy and Eager evaluation===========");
+		System.out.println("===========Checking for Lazy and Eager evaluation :===========");
 		
 		System.out.println(listValues.stream()
 									 .filter(StreamApi_FindFirst::isDivisible)				// filter() is a Lazy evaluation method
 									 .map(StreamApi_FindFirst::mapDouble)					// map() is a Lazy evaluation method
 									 .findFirst().orElse(0));								// findFirst() is not a Lazy evaluation method , it is an Eager evaluation method or Terminal functional 
 
+		
+		System.out.println("===========Checking for Blank List :===========");
+		ArrayList<String> blankList = new ArrayList<>();
+		
+//		System.out.println(blankList.get(0));
+//		System.out.println(blankList.stream().findFirst().get());
+		System.out.println(blankList.stream().findFirst().orElse(null));
+		
 	}
 	
 	public static boolean isDivisible(int i) 

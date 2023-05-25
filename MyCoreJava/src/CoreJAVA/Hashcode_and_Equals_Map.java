@@ -1,5 +1,5 @@
 package CoreJAVA;
-								// https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/
+									// https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/
 import java.util.HashMap;
 import java.util.Map;
 

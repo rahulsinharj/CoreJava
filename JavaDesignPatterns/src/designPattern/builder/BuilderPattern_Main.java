@@ -10,8 +10,6 @@ public class BuilderPattern_Main {
 		Student stu2 = new Student.StudentBuilder("Sneha").setAge(21).setCity("Patna").setSubject("Commerce").build();
 		System.out.println(stu2);
 
-		
-		
 	}
 
 }

@@ -90,8 +90,7 @@ public class ArraysSorting {
 		Arrays.stream(items).map(Arrays::toString).forEach(System.out::println);
 	}
 
-	// Item class with value, weight, and Comparable for sorting by value/weight
-	// ratio
+	// Item class with value, weight, and Comparable for sorting by value/weight ratio
 	class Item implements Comparable<Item> {
 		int value;
 		int weight;

@@ -1,4 +1,4 @@
-package designPatternType_CREATIONAL.Builder;
+package designPatternType_CREATIONAL.Builder_Example1;
 
 public class BuilderPattern_Main {
 

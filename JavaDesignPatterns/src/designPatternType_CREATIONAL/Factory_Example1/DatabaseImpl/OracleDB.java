@@ -1,6 +1,6 @@
-package designPatternType_CREATIONAL.Factory.DatabaseImpl;
+package designPatternType_CREATIONAL.Factory_Example1.DatabaseImpl;
 
-import designPatternType_CREATIONAL.Factory.Database;
+import designPatternType_CREATIONAL.Factory_Example1.Database;
 
 public class OracleDB implements Database{
 

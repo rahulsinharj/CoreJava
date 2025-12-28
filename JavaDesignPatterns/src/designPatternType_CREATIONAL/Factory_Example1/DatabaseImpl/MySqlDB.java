@@ -1,13 +1,13 @@
-package designPatternType_CREATIONAL.Factory.DatabaseImpl;
+package designPatternType_CREATIONAL.Factory_Example1.DatabaseImpl;
 
-import designPatternType_CREATIONAL.Factory.Database;
+import designPatternType_CREATIONAL.Factory_Example1.Database;
 
-public class MongoDB implements Database{
+public class MySqlDB implements Database{
 
 	private String driverName;
 	private String userName;
 	
-	public MongoDB(String driverName, String userName) {
+	public MySqlDB(String driverName, String userName) {
 		super();
 		this.driverName = driverName;
 		this.userName = userName;

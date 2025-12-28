@@ -1,4 +1,4 @@
-package designPatternType_CREATIONAL.Singleton;
+package designPatternType_CREATIONAL.Singleton_Example1;
 
 public class SingletonPattern_Enum {
 

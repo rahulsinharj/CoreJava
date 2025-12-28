@@ -1,8 +1,8 @@
-package designPattern.factory;
+package designPatternType_CREATIONAL.Factory;
 
-import designPattern.factory.DatabaseImpl.MongoDB;
-import designPattern.factory.DatabaseImpl.MySqlDB;
-import designPattern.factory.DatabaseImpl.OracleDB;
+import designPatternType_CREATIONAL.Factory.DatabaseImpl.MongoDB;
+import designPatternType_CREATIONAL.Factory.DatabaseImpl.MySqlDB;
+import designPatternType_CREATIONAL.Factory.DatabaseImpl.OracleDB;
 
 public class DatabaseFactory {
 

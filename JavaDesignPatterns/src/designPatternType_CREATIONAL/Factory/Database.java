@@ -1,4 +1,4 @@
-package designPattern.factory;
+package designPatternType_CREATIONAL.Factory;
 
 public interface Database {
 

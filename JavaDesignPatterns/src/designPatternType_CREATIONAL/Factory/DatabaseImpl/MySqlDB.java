@@ -1,6 +1,6 @@
-package designPattern.factory.DatabaseImpl;
+package designPatternType_CREATIONAL.Factory.DatabaseImpl;
 
-import designPattern.factory.Database;
+import designPatternType_CREATIONAL.Factory.Database;
 
 public class MySqlDB implements Database{
 

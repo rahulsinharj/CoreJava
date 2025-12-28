@@ -1,4 +1,4 @@
-package designPattern.factory;
+package designPatternType_CREATIONAL.Factory;
 
 import java.util.Scanner;
 

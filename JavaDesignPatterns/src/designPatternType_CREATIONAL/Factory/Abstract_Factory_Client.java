@@ -1,6 +1,18 @@
 package designPatternType_CREATIONAL.Factory;
 
 /*
+🎯 Scenario: Notification System
+🎯 New requirement (this triggers Abstract Factory)
+
+Now we need:
+	Notification
+	Logger
+
+And they must be consistent by environment:
+	AWS
+	Azure
+----------------------------------------------------------------
+
 //Step 1: Product interfaces
 interface Notification {
 	void send(String message);

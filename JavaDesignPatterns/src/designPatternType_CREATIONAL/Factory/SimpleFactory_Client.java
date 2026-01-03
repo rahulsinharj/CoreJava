@@ -1,5 +1,6 @@
 package designPatternType_CREATIONAL.Factory;
 
+//🎯 Scenario: Notification System
 /*
 //Step 1: Product interface
 interface Notification {
